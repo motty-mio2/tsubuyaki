@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mariadb:10
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_USER: tsubuyaki
+      MARIADB_PASSWORD: tokuronI
+      MARIADB_DATABASE: tsubuyaki
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+volumes:
+  db_data:
