@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>つぶやきWebアプリ</title>
+    <script type="text/javascript" th:src="@{/search.js}"></script>
 </head>
 
 <body>
@@ -11,6 +12,12 @@
     <img th:src="@{/tsubuyaki.png}">
     <p>「こころ」のうちのよしなしごと，ペチャクチャつぶやいてすっきりしませんか？</p>
     <a th:href="@{/read}">はじめる</a>
+
+    <h2>検索けんさくっ！</h2>
+
+    <input type="text" id="search_query"></input>
+    <button id="search_button">けんさく！</button>
+    <script type="text/javascript" th:src="@{/search.js}"></script>
 </body>
 
 </html>
